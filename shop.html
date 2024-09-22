@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <a> </a>
+          <a href="login-register.html" class="header__top-action">
+            Đăng Nhập / Đăng kí
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/logo espo.png"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="./assets/img/logo.svg" alt="">
+            </a>
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link" style="color: black;">Trang CHủ</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link" style="color:hsl(154, 56%, 36%) !important;">Cửa Hàng</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">Tài Khoản</a>
+            </li>
+            <li class="nav__item">
+              <a href="compare.html" class="nav__link">So Sánh</a>
+            </li>
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link">Đăng Nhập</a>
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <img src="./assets//img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link"></span>></li>
+          <li><span class="breadcrumb__link">Shop</span></li>
+        </ul>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products container section--lg">
+        <p class="total__products">Tìm thấy <span> 30 </span> sản phẩm dành cho bạn</p>
+        <div class="products__container grid">
+          <div class="product__item thung-1l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Bán chạy nhất</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 1L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 85 mm
+                  Chiều dài (L): 348 mm
+                  Chiều dài in trung bình: 320 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">69.000 đ</span>
+                <span class="old__price">79.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-5l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">10%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 5L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">99.000 đ</span>
+                <span class="old__price">89.100 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-18l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-orange">30%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 18L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">110.000 đ</span>
+                <span class="old__price">99.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-1l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Bán chạy nhất</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 1L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 85 mm
+                  Chiều dài (L): 348 mm
+                  Chiều dài in trung bình: 320 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">69.000 đ</span>
+                <span class="old__price">79.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-5l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">10%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 5L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">99.000 đ</span>
+                <span class="old__price">89.100 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-18l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-orange">30%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 18L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">110.000 đ</span>
+                <span class="old__price">99.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-1l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Bán chạy nhất</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 1L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 85 mm
+                  Chiều dài (L): 348 mm
+                  Chiều dài in trung bình: 320 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">69.000 đ</span>
+                <span class="old__price">79.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-5l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">10%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 5L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">99.000 đ</span>
+                <span class="old__price">89.100 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-18l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-orange">30%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 18L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">110.000 đ</span>
+                <span class="old__price">99.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-1l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="./assets/img/Thung-son-1-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Bán chạy nhất</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 1L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 85 mm
+                  Chiều dài (L): 348 mm
+                  Chiều dài in trung bình: 320 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">69.000 đ</span>
+                <span class="old__price">79.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-5l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-5-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">10%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 5L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">99.000 đ</span>
+                <span class="old__price">89.100 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item thung-18l">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/Thung-son-18-lit.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Quick View">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Add to Wishlist"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Compare">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-orange">30%</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Size 18L</span>
+              <a href="details.html">
+                <h3 class="product__title">Chiều cao (H): 170 mm
+                  Chiều dài (L): 542 mm
+                  Chiều dài in trung bình: 550 mm</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">110.000 đ</span>
+                <span class="old__price">99.000 đ</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Add To Cart"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <ul class="pagination">
+          <li><a href="#" class="pagination__link active">01</a></li>
+          <li><a href="#" class="pagination__link">02</a></li>
+          <li><a href="#" class="pagination__link">03</a></li>
+          <li><a href="#" class="pagination__link">...</a></li>
+          <li><a href="#" class="pagination__link">16</a></li>
+          <li><a href="#" class="pagination__link icon">
+            <i class="fi-rs-angle-double-small-right"></i>
+          </a></li>
+        </ul>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Đăng nhập để nhận Bản tin
+          </h3>
+          <p class="newsletter__description">
+            ...và nhận phiếu giảm giá 20% cho đơn hàng đầu tiên.
+                    </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Đặt mua</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/logo espo.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Liên Hệ</h4>
+          <p class="footer__description">
+            <span>Địa chỉ</span> 999 Nguyễn Chi Phương quận 10
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span> 0911 528 527
+          </p>
+          <p class="footer__description">
+            <span>Hoạt Động</span> 24/7
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Theo dõi chúng tôi</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Về chúng tôi</a></li>
+            <li><a href="#" class="footer__link">Thông tin giao hàng</a></li>
+            <li><a href="#" class="footer__link">Chính sách bảo mật</a></li>
+            <li><a href="#" class="footer__link">Điều khoản & Điều kiện</a></li>
+            <li><a href="#" class="footer__link">Liên hệ với chúng tôi</a></li>
+            <li><a href="#" class="footer__link">Trung tâm hỗ trợ</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Tài Khoản</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Đăng Nhập</a></li>
+            <li><a href="#" class="footer__link">Xem giỏ hàng</a></li>
+            <li><a href="#" class="footer__link">Thông tin của tôi</a></li>
+            <li><a href="#" class="footer__link">Trợ giúp</a></li>
+            <li><a href="#" class="footer__link">Đặt hàng</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Phương Thức Thanh Toán</h3>
+          <img
+            src="./assets/img/payment-method.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2024 ESPO. All right reserved</p>
+        <span class="designer">Designer by Van Thanh</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
